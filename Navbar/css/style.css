@@ -1,0 +1,33 @@
+nav{
+	background-color:#AFD274;
+	padding:1px;
+}
+.custom-navbar{
+	display:flex;
+	flex-direction:row;
+	
+	list-style-type: none;
+}
+.item{
+	width:15vmin;
+}
+@media only screen and (max-width:768px){
+    .custom-navbar{
+		display:flex;
+		flex-direction:column;
+		list-style-type: none;
+
+}
+    .item{
+         display:none;
+         padding:5px;
+        
+
+    }
+   
+}
+
+.text-style{
+	font-size:3.7vmin;
+	text-align:center;
+}
