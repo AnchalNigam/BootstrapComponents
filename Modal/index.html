@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  
+  <title>Modal Component</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" >  
+  <!--Animation css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">   
+
+  
+  <!-- Font awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <!-- My style -->
+  <link rel="stylesheet" href="css/style.css">   
+
+</head>
+<body>
+  <div class="center-align">
+   <!-- Open The Modal -->
+    <button id="myBtn" class="btn">Open Modal</button>
+    
+</div>
+  <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Thankyou for checking!</h2>
+        </div>
+        <div class="modal-body">
+          <p>Hope so,you liked my modal</p>
+          <p>Waiting for some positive response...</p>
+        </div>
+        <div class="modal-footer">
+          <div >
+            <h3 class="close-btn">Close</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- My function -->
+<script src="js/modal.js"></script>
+
+
+</body>
+</html>
