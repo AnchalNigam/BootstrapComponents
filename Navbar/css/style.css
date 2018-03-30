@@ -1,33 +1,117 @@
-nav{
-	background-color:#AFD274;
-	padding:1px;
-}
-.custom-navbar{
+.container{
 	display:flex;
-	flex-direction:row;
-	
-	list-style-type: none;
+	flex-direction: column;
 }
-.item{
-	width:15vmin;
-}
-@media only screen and (max-width:768px){
-    .custom-navbar{
-		display:flex;
-		flex-direction:column;
-		list-style-type: none;
 
-}
-    .item{
-         display:none;
-         padding:5px;
-        
+/*my nav after collapse*/
 
-    }
+.collapse-nav {
+    border-bottom: 1px solid #EAEAEB;
+    line-height: 40px;
+    text-align:right;
+    background-color:#7395AE;
+    display:none;
    
 }
+.icon-adjust{
+	
+	margin-right:1vmin;
+	cursor:pointer;
+}
+/*end */
 
-.text-style{
-	font-size:3.7vmin;
-	text-align:center;
+/*my nav at big screen*/
+.nav{
+	background-color:#7395AE;
+	display:flex;
+	flex-direction:row;
+	padding:15px;
+
+
+}
+.nav a{
+	text-decoration: none;
+	color:#FFF;
+}
+.item{
+	margin-left:3vmin;
+	margin-right:3vmin;
+	padding:4px;
+	
+}
+
+@media only screen and (max-width:770px){
+     
+    .nav{
+		background-color:#7395AE;
+		display:flex;
+		flex-direction:column;
+		text-decoration: none;
+
+		
+
+}
+	.nav .item{
+		border-bottom:1px solid #ccc;
+		padding:7px;
+		color:#FFF;
+	}
+	.collapse-nav {
+    border-bottom: 1px solid #EAEAEB;
+    line-height: 40px;
+    text-align:right;
+    background-color:#7395AE;
+    display:block;
+   
+}
+	
+}
+
+.dropdown .dropbtn {
+	    
+  font-size: 16px; 
+  cursor:pointer;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width:16vmin;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+@media only screen and (max-width:770px){
+     .dropdown-content {
+		  display: none;
+
+		  position:relative;
+		  background-color: inherit;
+		  width:100px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+}
+
+    
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.colored-border{
+	border:4px solid red;
 }
